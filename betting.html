@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <script src="jquery-1.12.2.min.js"></script>
+  <script src="betting.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-theme.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <h1>Welcome to the betting game!</h1>
+    <div class="col-md-6">
+      <form role="form">
+        <div class="form-group">
+          <label for="betAmount">Bet (between $5.00 and $10.00</label>
+          <input type="text" class="form-control" id="betAmount" placeholder="Bet Amount">
+        </div>
+        <div class="form-group">
+          <label for="guessNumber">Guess a number (between 1 and 10)</label>
+          <input type="text" class="form-control" id="guessNumber" placeholder="Number">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <p>Funds remaining: $<span id="funds-remaining">20</span>
+      <p>Random number: <span id="random-number"></span>
+    </div>
+  </div>
+</div>
+
+<!--     <button class="btn" style="margin-bottom: 40px; margin-top: 40px;" type="button" id="start-program" onclick="startProgram()">Start New Game</button> -->
+
+</body>
+
+</html>
